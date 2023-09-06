@@ -24,6 +24,15 @@ def predict():
     humidity = float(st.text_input('humidity', ""))
     ph = float(st.text_input('ph', ""))
     rainfall = float(st.text_input('rainfall', ""))
+
+    nitrogen = int(nitrogen)
+    phosphorous = int(phosphorous)
+    potassium = int(potassium)
+    temp = float(temp)
+    humidity = float(humidity)
+    ph = float(ph)
+    rainfall = float(rainfall)
+    
     result = ""
     ans = ""
     if st.button("Predict"):
@@ -32,7 +41,7 @@ def predict():
         result = model.predict(input_query)
         ans = result[0]
 
-    st.success('Crop : {}'.format(ans.title()))
+    st.success('Crop : {}'.format(ans))
 
 
 if __name__ == '__main__':
