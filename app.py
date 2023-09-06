@@ -17,13 +17,13 @@ def predict():
     """
     st.markdown(html_temp, unsafe_allow_html=True)
 
-    nitrogen = st.number_input('nitrogen', "")
-    phosphorous = st.number_input('phosphorous', "")
-    potassium = st.number_input('potassium', "")
-    temp = st.number_input('temperature', "")
-    humidity = st.number_input('humidity', "")
-    ph = st.number_input('ph', "")
-    rainfall = st.number_input('rainfall', "")
+    nitrogen = st.number_input('nitrogen')
+    phosphorous = st.number_input('phosphorous')
+    potassium = st.number_input('potassium')
+    temp = st.number_input('temperature')
+    humidity = st.number_input('humidity')
+    ph = st.number_input('ph')
+    rainfall = st.number_input('rainfall')
 
     result = ""
     ans = ""
