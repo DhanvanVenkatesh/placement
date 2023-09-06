@@ -32,7 +32,7 @@ def predict():
         result = model.predict(input_query)
         ans = result[0]
 
-    st.success('Crop : {}'.format(ans))
+    st.success('Crop : {}'.format(ans.title()))
 
 
 if __name__ == '__main__':
